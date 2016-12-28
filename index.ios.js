@@ -5,42 +5,30 @@
  */
 
 import { Button } from './Components/Button'
+import { App } from './Components/App'
 import { ButtonGroup } from './Components/ButtonGroup'
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  NavigatorIOS
 } from 'react-native';
 
 export default class MyReactNativeProject extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <ButtonGroup></ButtonGroup>
-      </View>
+      <NavigatorIOS
+        initialRoute={{
+          component: App,
+          title: 'Initial Scene'
+        }} 
+        style={{flex: 1}}
+      />
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('MyReactNativeProject', () => MyReactNativeProject);

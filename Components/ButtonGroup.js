@@ -9,9 +9,10 @@ import {
 
 export class ButtonGroup extends Component{
   render(){
-    this.buttons = details.map((element)=> {
+    this.buttons = details.map((element,index)=> {
       return (
         <Button 
+          key={index}
           name={element.title}
           info ={element.info}
         ></Button>
@@ -24,7 +25,6 @@ export class ButtonGroup extends Component{
     )
   }
 }
-
 
 var details = [
   {
