@@ -13,11 +13,11 @@ export class App extends Component {
       navigator: PropTypes.object.isRequired,
     }
 
-    _onForward = () => {
-      this.props.navigator.push({
-        title: 'Scene ',
-      });
-    }
+    // _onForward = () => {
+    //   this.props.navigator.push({
+    //     title: 'Scene ',
+    //   });
+    // }
   render() {
     return (   
       <View style={styles.container}>

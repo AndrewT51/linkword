@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -15,7 +16,8 @@ export class Button extends Component{
   render(){
     this.nextRoute = {
       component: OtherRoute,
-      title:'Other Route'
+      title: this.props.name,
+      data: this.props.data
     }
     return (
       <TouchableHighlight
