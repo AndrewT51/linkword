@@ -15,13 +15,15 @@ export class App extends Component {
 
     _onForward = () => {
       this.props.navigator.push({
-        title: 'Scene ' + nextIndex,
+        title: 'Scene ',
       });
     }
   render() {
     return (   
       <View style={styles.container}>
-        <ButtonGroup></ButtonGroup>
+        <ButtonGroup 
+          navigator={this.props.navigator}
+        ></ButtonGroup>
       </View>
     );
   }

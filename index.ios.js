@@ -22,9 +22,10 @@ export default class MyReactNativeProject extends Component {
       <NavigatorIOS
         initialRoute={{
           component: App,
-          title: 'Initial Scene'
+          title: 'Main Menu'
         }} 
         style={{flex: 1}}
+        
       />
     );
   }

@@ -12,6 +12,7 @@ export class ButtonGroup extends Component{
     this.buttons = details.map((element,index)=> {
       return (
         <Button 
+          navigator={this.props.navigator}
           key={index}
           name={element.title}
           info ={element.info}
@@ -29,23 +30,28 @@ export class ButtonGroup extends Component{
 var details = [
   {
     title: 'Menu A',
-    info: 'Amazing'
+    info: 'Amazing',
+    page: 1
   },
    {
     title: 'Menu B',
-    info: 'Brilliant'
+    info: 'Brilliant',
+    page: 2
   },
    {
     title: 'Menu C',
-    info: 'Creature'
+    info: 'Creature',
+    page: 3 
   },
    {
     title: 'Menu D',
-    info: 'Brilliant'
+    info: 'Brilliant',
+    page: 4
   },
    {
     title: 'Menu E',
-    info: 'Creature'
+    info: 'Creature',
+    page: 5
   }
 
 ]
