@@ -36,6 +36,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'red',
+    // flexDirection:'row',
+    // flex:1,
     width: 350,
     height: 35,
     borderRadius: 8,

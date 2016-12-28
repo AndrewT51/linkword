@@ -24,7 +24,7 @@ export class ButtonGroup extends Component{
       )
     })
     return (
-      <View>
+      <View >
         {this.buttons}
       </View>
     )
@@ -32,6 +32,7 @@ export class ButtonGroup extends Component{
 }
 
 var details = [
+
   {
     title: 'Animals',
     info: 'Amazing',

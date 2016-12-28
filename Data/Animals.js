@@ -1,6 +1,9 @@
 
 var AnimalData = [
   {
+    grammar: 'This is to show that I can insert grammar lessons midway through the lesson'
+  },
+  {
     en: 'CAT',
     sp: 'GATO',
     audio: '',

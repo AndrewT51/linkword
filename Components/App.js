@@ -22,6 +22,7 @@ export class App extends Component {
     return (   
       <View style={styles.container}>
         <ButtonGroup 
+          style={{flex:1}}
           navigator={this.props.navigator}
         ></ButtonGroup>
       </View>

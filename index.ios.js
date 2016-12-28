@@ -24,8 +24,7 @@ export default class MyReactNativeProject extends Component {
           component: App,
           title: 'Main Menu'
         }} 
-        style={{flex: 1}}
-        
+        style={{flex: 1}}  
       />
     );
   }
